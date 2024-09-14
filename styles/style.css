@@ -39,13 +39,107 @@
 
 .header__address {
   justify-self: end;
-  font-style: normal;
   padding-right: 37px;
+  font-style: normal;
   line-height: 1.35;
 }
 
 /* Первая секция */
 .cover {
+  position: relative;
+  flex-shrink: 0;
+  width: 1100px;
+  height: 757px;
+  background: url("../images/cover.jpg") no-repeat center / cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover__title {
+  padding: 165px 20px 0px 50px;
+  color: white;
+  font-weight: 700;
+  font-size: 100px;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_left {
+  line-height: 115%;
+  text-align: left;
+}
+
+.aligned-text_center {
+  padding-top: 20px;
+  padding-right: 29px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.aligned-text_right {
+  padding-top: 20px;
+  line-height: 100%;
+  text-align: right;
+}
+
+.cover__description {
+  position: absolute;
+  bottom: 51px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cover__description-text {
+  padding-left: 78px;
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 18.5px;
+}
+
+.bet-button {
+  width: 256px;
+  height: 51px;
+  margin-right: 50px;
+  border: 1px solid white;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  transition: background-color 0.6s, transform 0.5s;
+  cursor: pointer;
+}
+
+.bet-button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: scale(110%);
+}
+
+.bet-button:active {
+  transition: background-color 0.3s, transform 0.2s;
+  transform: scale(105%);
 }
 
 /* Секция с карточками */
