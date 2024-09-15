@@ -5,8 +5,6 @@
   margin: 92px 50px;
   color: black;
   font-size: 18px;
-  font-style: normal;
-  line-height: normal;
 }
 
 .menu {
@@ -81,20 +79,20 @@
 }
 
 .aligned-text_left {
-  line-height: 115%;
+  line-height: 1.15;
   text-align: left;
 }
 
 .aligned-text_center {
   padding-top: 20px;
   padding-right: 29px;
-  line-height: 100%;
+  line-height: 1;
   text-align: center;
 }
 
 .aligned-text_right {
   padding-top: 20px;
-  line-height: 100%;
+  line-height: 1;
   text-align: right;
 }
 
@@ -112,7 +110,7 @@
   color: white;
   font-weight: 400;
   font-size: 22px;
-  line-height: 28px;
+  line-height: 1.27273;
   text-transform: uppercase;
   word-spacing: 18.5px;
 }
@@ -125,7 +123,6 @@
   color: white;
   font-weight: 500;
   font-size: 22px;
-  line-height: normal;
   text-align: center;
   text-transform: uppercase;
   background-color: transparent;
@@ -135,12 +132,12 @@
 
 .bet-button:hover {
   background-color: rgba(0, 0, 0, 0.6);
-  transform: scale(110%);
+  transform: scale(1.1);
 }
 
 .bet-button:active {
   transition: background-color 0.3s, transform 0.2s;
-  transform: scale(105%);
+  transform: scale(1.05);
 }
 /* Первая секция */
 
@@ -151,11 +148,8 @@
 
 .lots__heading {
   padding-left: 64px;
-  color: black;
   font-weight: 700;
   font-size: 40px;
-  font-style: normal;
-  line-height: normal;
   text-transform: uppercase;
 }
 
@@ -205,10 +199,9 @@
   color: white;
   font-weight: 700;
   font-size: 22px;
-  font-style: normal;
-  font-style: normal;
-  line-height: 120%; /* 26.4px */
+  line-height: 1.2;
   text-decoration-line: underline;
+  text-decoration-thickness: 1px;
   text-underline-offset: 3px;
   text-transform: uppercase;
 }
@@ -219,8 +212,7 @@
   color: white;
   font-weight: 400;
   font-size: 20px;
-  font-style: normal;
-  line-height: 120%; /* 24px */
+  line-height: 1.2;
 }
 
 .card__letter-spacing-extended {
@@ -228,7 +220,7 @@
 }
 
 .card:hover {
-  transform: scale(105%);
+  transform: scale(1.05);
 }
 
 .lots__link {
@@ -236,8 +228,6 @@
   padding: 3px 64px;
   font-weight: 400;
   font-size: 20px;
-  font-style: normal;
-  line-height: normal;
   text-underline-position: under;
   text-transform: lowercase;
 }
@@ -245,18 +235,18 @@
 
 /* Секция с информацией об аукционе */
 .about {
-  margin: 0px 24px 0px 24px;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  margin: 0px 24px 0px 24px;
 }
 
 .about__logo {
-  margin: 33px 72px 359px 47px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 240px;
   height: 240px;
+  margin: 33px 72px 359px 47px;
   border-radius: 50%;
   background-color: black;
 }
@@ -269,16 +259,14 @@
 .about__title {
   font-weight: 700;
   font-size: 40px;
-  font-style: normal;
-  line-height: normal;
   text-transform: uppercase;
 }
 
 .about__content {
-  padding-top: 134px;
   display: flex;
   flex-direction: column;
   row-gap: 100px;
+  padding-top: 134px;
 }
 
 .about__text {
@@ -288,7 +276,7 @@
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
-  line-height: 24px; /* 120% */
+  line-height: 1.2;
   letter-spacing: 0.2px;
 }
 /* Секция с информацией об аукционе */
@@ -300,12 +288,9 @@
   margin: 142px 50px 88px 50px;
   color: black;
   font-size: 18px;
-  font-style: normal;
-  line-height: normal;
 }
 
 .footer__address {
-  justify-self: start;
   font-style: normal;
   line-height: 1.35;
 }
@@ -313,8 +298,8 @@
 .footer__menu ul {
   display: flex;
   flex-direction: column;
-  list-style: none;
   align-items: center;
+  list-style: none;
 }
 
 .footer__link {
@@ -335,5 +320,5 @@
 }
 
 .footer__social-icon:hover {
-  transform: scale(115%);
+  transform: scale(1.15);
 }
