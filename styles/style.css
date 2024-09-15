@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 92px 50px;
+  margin: 92px 50px;
   color: black;
   font-size: 18px;
   font-style: normal;
@@ -233,7 +233,7 @@
 
 .lots__link {
   display: inline-block;
-  margin: 3px 64px;
+  padding: 3px 64px;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
@@ -245,7 +245,7 @@
 
 /* Секция с информацией об аукционе */
 .about {
-  padding: 0px 24px 180px 24px;
+  margin: 0px 24px 0px 24px;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
@@ -294,4 +294,46 @@
 /* Секция с информацией об аукционе */
 
 .footer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
+  margin: 142px 50px 88px 50px;
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.footer__address {
+  justify-self: start;
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.footer__menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+}
+
+.footer__link {
+  text-underline-position: under;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-self: end;
+  column-gap: 48px;
+  list-style: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.5s;
+}
+
+.footer__social-icon:hover {
+  transform: scale(115%);
 }
