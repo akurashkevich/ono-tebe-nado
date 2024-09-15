@@ -245,9 +245,53 @@
 
 /* Секция с информацией об аукционе */
 .about {
+  padding: 0px 24px 180px 24px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
+.about__logo {
+  margin: 33px 72px 359px 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: black;
+}
 
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.about__content {
+  padding-top: 134px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.2px;
+}
+/* Секция с информацией об аукционе */
 
 .footer {
 }
