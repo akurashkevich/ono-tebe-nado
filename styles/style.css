@@ -48,7 +48,7 @@
 .cover {
   position: relative;
   flex-shrink: 0;
-  width: 1100px;
+  width: 100%;
   height: 757px;
   background: url("../images/cover.jpg") no-repeat center / cover;
 }
@@ -63,6 +63,7 @@
 }
 
 .cover__title {
+  position: relative;
   padding: 165px 20px 0px 50px;
   color: white;
   font-weight: 700;
@@ -141,14 +142,112 @@
   transition: background-color 0.3s, transform 0.2s;
   transform: scale(105%);
 }
+/* Первая секция */
 
 /* Секция с карточками */
 .lots {
+  margin: 179px 0 146px 0;
 }
+
+.lots__heading {
+  padding-left: 64px;
+  color: black;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 100%;
+  padding: 27px 24px;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  flex-grow: 1;
+  width: 334px;
+  min-height: 563px;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  transition: transform 0.5s;
+}
+
+.card_type_film {
+  background: url("../images/card-lot-01.jpg") no-repeat center / cover;
+}
+
+.card_type_book {
+  background: url("../images/card-lot-02.jpg") no-repeat center / cover;
+}
+
+.card_type_picture {
+  background: url("../images/card-lot-03.jpg") no-repeat center / cover;
+}
+
+.card__title {
+  position: absolute;
+  inset: 51px 40px auto 40px;
+  color: white;
+  font-weight: 700;
+  font-size: 22px;
+  font-style: normal;
+  font-style: normal;
+  line-height: 120%; /* 26.4px */
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  position: absolute;
+  inset: auto 40px 48px 40px;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 120%; /* 24px */
+}
+
+.card__letter-spacing-extended {
+  letter-spacing: 2.6px;
+}
+
+.card:hover {
+  transform: scale(105%);
+}
+
+.lots__link {
+  display: inline-block;
+  margin: 3px 64px;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+  text-underline-position: under;
+  text-transform: lowercase;
+}
+/* Секция с карточками */
 
 /* Секция с информацией об аукционе */
 .about {
 }
+
+
 
 .footer {
 }
