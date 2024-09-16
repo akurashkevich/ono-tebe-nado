@@ -184,7 +184,11 @@
 .card {
   position: relative;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transition: transform 0.5s;
+  z-index: 0;
 }
 
 .card_type_film {
@@ -200,8 +204,8 @@
 }
 
 .card__title {
-  position: absolute;
-  inset: 51px 40px auto 40px;
+  z-index: 2;
+  padding: 51px 40px 0 40px;
   color: white;
   font-weight: 700;
   font-size: 22px;
@@ -213,8 +217,8 @@
 }
 
 .card__text {
-  position: absolute;
-  inset: auto 40px 48px 40px;
+  z-index: 2;
+  padding: 0 40px 48px 40px;
   color: white;
   font-weight: 400;
   font-size: 20px;
