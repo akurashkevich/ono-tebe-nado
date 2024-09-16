@@ -11,19 +11,24 @@
   text-transform: lowercase;
 }
 
-.header__menu ul {
-  display: flex;
-  gap: 32px;
-  list-style: circle;
-}
-
-.header__link {
+.link {
   letter-spacing: 0.18px;
   text-underline-position: under;
 }
 
-.header__link_active {
+.link_active {
   text-decoration: none;
+}
+
+.address {
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.header__menu ul {
+  display: flex;
+  gap: 32px;
+  list-style: circle;
 }
 
 .header__menu li:first-child {
@@ -38,8 +43,6 @@
 .header__address {
   justify-self: end;
   padding-right: 37px;
-  font-style: normal;
-  line-height: 1.35;
 }
 
 /* Первая секция */
@@ -288,11 +291,6 @@
   margin: 142px 50px 88px 50px;
   color: black;
   font-size: 18px;
-}
-
-.footer__address {
-  font-style: normal;
-  line-height: 1.35;
 }
 
 .footer__menu ul {
