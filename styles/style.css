@@ -120,8 +120,8 @@
 }
 
 .bet-button {
-  width: 256px;
-  height: 51px;
+  min-width: 256px;
+  min-height: 51px;
   margin-right: 50px;
   border: 1px solid white;
   color: white;
