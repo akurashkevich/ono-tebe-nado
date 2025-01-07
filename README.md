@@ -16,4 +16,4 @@ https://github.com/w1tcher6479/ono-tebe-nado
 
 ## Демо
 
-GitHub Pages: [ссылка](https://w1tcher6479.github.io/ono-tebe-nado)
+GitHub Pages: [ссылка](https://akurashkevich.github.io/ono-tebe-nado/)
